@@ -6,13 +6,39 @@ article{
 	margin: auto;
 	max-width: 1300px;
 }
-
 .links:hover{
 	cursor: pointer;
 }
 * {
 	scroll-behavior: smooth;
 }
+#proj > p{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 2em;
+}
 #contactos > iframe {
 	float: left;
+}
+#contactos > p > a{
+	margin-left: 10px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 2em;
+	margin-left: 10px;
+}
+#contactos > p > a:hover{
+	color: rgba(28,90,72,1.00);
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+	
+    position:absolute;
 }

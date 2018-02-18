@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 	$("#LinkAdmin").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#Carousel").offset().top-150
+			scrollTop: $("#admin").offset().top-150
 		}, 1500);
 	});
 	$("#LinkContactos").click(function() {

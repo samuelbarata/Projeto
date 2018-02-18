@@ -16,3 +16,6 @@
 #myCarousel{
 	margin: 15px;
 }
+#myCarousel > ul{
+	/*visibility: hidden;*/
+}
