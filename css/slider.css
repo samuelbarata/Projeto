@@ -10,3 +10,6 @@
 #myCarousel .nav a {
     border-radius:0px;
 }
+.carousel-caption{
+	visibility: hidden;
+}
