@@ -238,7 +238,7 @@
 article{
 	display: block;
 	margin: auto;
-	max-width: 1200px;
+	max-width: 1300px;
 }
 /**/
 
@@ -247,8 +247,11 @@ video{
 	display: block;
 	margin: auto;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
 	article{
+		width: 100%;
+	}
+	video{
 		width: 100%;
 	}
 }
