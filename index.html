@@ -17,6 +17,12 @@ Samuel Barata 2018
 <html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
+	<!--jQuery-->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!---->
+	
 	<!--Bootstrap v3.7.7-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -24,12 +30,6 @@ Samuel Barata 2018
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!---->	
-	
-	<!--jQuery-->
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<!---->
 	
 	<!--Favicon-->
 		<link rel="apple-touch-icon" sizes="57x57" href="fonts/favicon/apple-icon-57x57.png">
@@ -91,12 +91,9 @@ Samuel Barata 2018
 			<div class="container">
 				<div class="row row1">
 					<ul class="largenav pull-right">
-						<li class="upper-links"><a class="links" href="#campanha">Campanha</a></li>
-						<li class="upper-links"><a class="links" href="https://campusbox.org/">Link 2</a></li>
-						<li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 3</a></li>
-						<li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 4</a></li>
-						<li class="upper-links"><a class="links" href="#Administracao">Administração</a></li>
-						<li class="upper-links"><a class="links" href="#contactos">Contactos</a></li>
+						<li class="upper-links"><a class="links" href="#campanha" onClick="scroll()">Campanha</a></li>
+						<li class="upper-links"><a class="links" href="#Administracao" onClick="scroll()">Administração</a></li>
+						<li class="upper-links"><a class="links" href="#contactos" onClick="scroll()">Contactos</a></li>
 						<!--<li class="upper-links">
 							<a class="links" href="http://clashhacks.in/">
 								<svg class="" width="16px" height="12px" style="overflow: visible;">
@@ -104,15 +101,15 @@ Samuel Barata 2018
 								</svg>
 							</a>
 						</li>-->
-						<li class="upper-links dropdown"><a class="links" href="http://clashhacks.in/">Dropdown</a>
+						<li class="upper-links dropdown"><a class="links" href="http://clashhacks.in/">Redes Sociais</a>
 							<ul class="dropdown-menu">
-								<li class="profile-li"><a class="profile-links" href="http://yazilife.com/">Link</a></li>
-								<li class="profile-li"><a class="profile-links" href="http://hacksociety.tech/">Link</a></li>
+								<li class="profile-li"><a class="profile-links" href="https://www.facebook.com/AECSJB201718/">Facebook</a></li>
+								<li class="profile-li"><a class="profile-links" href="https://www.instagram.com/ae_csjb/">Instagram</a></li>
+								<li class="profile-li"><a class="profile-links" href="mailto:ae.csjb.1718@gmail.com">Email</a></li>
+								<!--<li class="profile-li"><a class="profile-links" href="http://">Link</a></li>
 								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
 								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
-								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
-								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
-								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+								<li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>-->
 							</ul>
 						</li>
 					</ul>
@@ -415,7 +412,8 @@ Samuel Barata 2018
 	
 	
 	
-</article>	
+</article>
+<footer></footer>
 </body>
 </html>
 <!--
