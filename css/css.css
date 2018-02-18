@@ -10,3 +10,6 @@ article{
 .links:hover{
 	cursor: pointer;
 }
+* {
+	scroll-behavior: auto;
+}
