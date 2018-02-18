@@ -247,6 +247,11 @@ video{
 	display: block;
 	margin: auto;
 }
+@media screen and (max-width: 1200px){
+	article{
+		width: 100%;
+	}
+}
 /**/
 
 /*Carousel*/
