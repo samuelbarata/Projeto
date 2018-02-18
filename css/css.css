@@ -11,5 +11,5 @@ article{
 	cursor: pointer;
 }
 * {
-	scroll-behavior: auto;
+	scroll-behavior: smooth;
 }

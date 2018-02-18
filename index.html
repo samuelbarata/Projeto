@@ -55,6 +55,7 @@ Samuel Barata 2018
 		<link rel="stylesheet" href="css/admin.css" type="text/css">
 		<link rel="stylesheet" href="css/campanha.css" type="text/css">
 		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/slider.css" type="text/css">
 		<link rel="stylesheet" href="css/css.css" type="text/css">
 	<!---->
 	
@@ -62,7 +63,7 @@ Samuel Barata 2018
 		<script src="js/js.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/admin.js"></script>
-		<script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+		<script src="js/slider.js"></script>
 	<!---->
 
 	<meta name="author" content="Samuel Barata">
@@ -167,16 +168,67 @@ Samuel Barata 2018
 <!---->
 	<div id="campanha">
 	<h1>Campanha</h1>
-		<video src="img/AE_Camp.mp4" controls></video>	
+		
+		<div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+
+				<div class="item active">
+				  <video src="img/AE_Camp.mp4" controls width="1240px"></video>
+				   <div class="carousel-caption">
+					<h3>Headline</h3>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+				  </div>
+				</div><!-- End Item -->
+
+				 <div class="item">
+				  <img src="http://placehold.it/1200x400/999999/cccccc">
+				   <div class="carousel-caption">
+					<h3>Headline</h3>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+				  </div>
+				</div><!-- End Item -->
+
+				<div class="item">
+				  <img src="http://placehold.it/1200x400/dddddd/333333">
+				   <div class="carousel-caption">
+					<h3>Headline</h3>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+				  </div>
+				</div><!-- End Item -->
+
+				<div class="item">
+				  <img src="http://placehold.it/1200x400/999999/cccccc">
+				   <div class="carousel-caption">
+					<h3>Headline</h3>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+				  </div>
+				</div><!-- End Item -->
+
+			  </div><!-- End Carousel Inner -->
+
+
+				<ul class="nav nav-pills nav-justified">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem ipsum dolor sit</small></a></li>
+				  <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum dolor sit</small></a></li>
+				  <li data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>Lorem ipsum dolor sit</small></a></li>
+				  <li data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Lorem ipsum dolor sit</small></a></li>
+				</ul>
+
+
+			</div><!-- End Carousel -->
+		</div>
+		
+		
+		
+		
+		
 	</div>
 	
 	
-	
-	
-<!---->
-	<div id="Carousel">
-		<h1>imagens</h1>
-	</div>
+
 
 <!---->
 	<div id="Administracao"><!--https://bootsnipp.com/snippets/4MD13-->
@@ -406,7 +458,7 @@ Samuel Barata 2018
 				  <p class="p-inner-window">Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.</p>
 				</div>
 			  </div>
-			</div>
+			 </div>
 		  </div>
 
 		</section>
