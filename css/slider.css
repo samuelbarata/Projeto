@@ -13,3 +13,6 @@
 .carousel-caption{
 	visibility: hidden;
 }
+#myCarousel{
+	margin: 15px;
+}
