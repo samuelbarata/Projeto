@@ -26,4 +26,9 @@ $(document).ready(function(){
 			scrollTop: $("#contactos").offset().top-150
 		}, 1500);
 	});
+	$("#Linkre").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#re").offset().top-150
+		}, 1500);
+	});
 });
