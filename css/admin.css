@@ -424,6 +424,6 @@ top: 154px !important;
 
   }
 /*=================================================*/
-#colorbox{
-	position: fixed;
-}
+/*#colorbox{
+	position: fixed; /*tá no js*//*
+}/*
