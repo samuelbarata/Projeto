@@ -6,7 +6,7 @@
   padding: 0;
   border: 0;
   vertical-align: top; 
-  /* outline: 1px dotted salmon; */
+  /*outline: 1px dotted salmon;*/
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; 
@@ -153,7 +153,7 @@ img {
 }
 
 .inner-overlay-box {
-  color: #eee; 
+  color: #eee;
 }
 /*
 ColorBox Core Style:
@@ -363,6 +363,7 @@ The following CSS is consistent between example themes and should not be altered
     #cboxClose {
       top: 0; 
       bottom: auto;
+	  position: fixed;
     }
 
     #cboxTitle {
@@ -422,3 +423,7 @@ top: 154px !important;
     }
 
   }
+/*=================================================*/
+#colorbox{
+	position: fixed;
+}

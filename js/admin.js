@@ -8,6 +8,7 @@
  */
 
 (function ($, document, window) {
+	"use strict";
 	var
 	// Default settings object.
 	// See http://jacklmoore.com/colorbox for details.
@@ -183,7 +184,7 @@
 		var i,
 			data = $.data(element, colorbox);
 		
-		if (data == null) {
+		if (data === null) {
 			settings = $.extend({}, defaults);
 			if (console && console.log) {
 				console.log('Error: cboxElement missing settings object');
@@ -544,7 +545,7 @@ window.CP.exitedLoop(1);
 		} else {
 			top = scrollTop;
 			left = scrollLeft;
-			$box.css({position: 'absolute'});
+			$box.css({position: 'fixed'});//'absolute' só demorei porra de 3h a descobrir pq é q o meu css n funcionava |NÃO MEXER AQUI|
 		}
 
 		// keeps the top and left positions within the browser's viewport.
@@ -999,7 +1000,7 @@ window.CP.exitedLoop(1);
 }(jQuery, document, window));
 
 $(function(){
-
+"use strict";
 $(".group-cbox1").colorbox({rel:'group-cbox1', transition:"none", width:"736px", height:"448px"});
 
 $(".inline").colorbox({inline:true, width:"736px"});
