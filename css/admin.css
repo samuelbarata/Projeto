@@ -111,7 +111,7 @@ img {
   margin: 1em auto 0;
   background-color: #444;
   padding-bottom: 1rem; 
-  overflow: hidden;
+  overflow: hidden;	
 }
 
 .image-wrap > a {
@@ -426,4 +426,8 @@ top: 154px !important;
 /*=================================================*/
 /*#colorbox{
 	position: fixed; /*tá no js*//*
-}/*
+}*/
+#image-wrap{
+	width: 100%;
+	margin-bottom: 15px;
+}
