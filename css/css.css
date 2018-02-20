@@ -42,7 +42,9 @@ article{
 	
     position:absolute;
 }
-h1{
-	color: rgba(28,90,72,1.00);
+article > div > h1{
+	/*color: rgba(28,90,72,1.00);*/
+	color: rgba(66,132,78,1.00);
+	margin-bottom: 5px;
 	font-weight: bold;
 }
