@@ -42,3 +42,7 @@ article{
 	
     position:absolute;
 }
+h1{
+	color: rgba(28,90,72,1.00);
+	font-weight: bold;
+}
