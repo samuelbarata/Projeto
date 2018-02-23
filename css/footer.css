@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer {
+    background-color: rgba(28,90,72,0.70);
+
+    width: 100%;
+    bottom: 0;
+    font-weight: lighter;
+    color: white;
+}
+.footerHeader{
+    width:100%;
+    padding:1em;
+    background-color: rgba(28,90,72,0.00);
+    text-align:center;
+    color:white;
+}
+footer h3{
+    font-weight:lighter;
+}
+footer ul{
+    padding-left:5px;
+    list-style:none;
+	width:100%;
+}
+footer p{
+    text-align : justify;
+    font-size : 12px;
+}
+footer iframe {
+    width:100%;
+    position:relative;
+    height:170px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+.sm li {
+    display: inline;
+    padding:5px;
+    float:left;
+} 
+.sm li a img {
+    width:32px;
+}
+footer a{
+	color:white;
+	text-decoration:none;
+}
+footer a:hover {
+
+}
+.mail_fo {
+	margin:0 auto;
+}
