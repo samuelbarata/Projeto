@@ -43,7 +43,8 @@ footer iframe {
     float:left;
 } 
 .sm li a img {
-    width:32px;
+    width:64px;
+	cursor: copy;
 }
 footer a{
 	color:white;
@@ -51,7 +52,4 @@ footer a{
 }
 footer a:hover {
 
-}
-.mail_fo {
-	margin:0 auto;
 }
