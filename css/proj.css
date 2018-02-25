@@ -38,9 +38,14 @@ ul > li {
 .cat{
 	float: left;
 	margin: 10px;
-	width: 250px;
-	height: 200px;
-	background-color:rgba(253,253,253,1.00);
+	width: 255px;
+	height: 210px;
+	background-color:rgba(66,132,78,0.05);
+	border-radius: 45px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .cat:hover{
 	cursor: copy;
