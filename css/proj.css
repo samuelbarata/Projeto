@@ -1,20 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.new-deal{width:100%;float:left;padding:15px 0;}
-ul {margin:20px auto;width:40%;}
+/*.new-deal{width:100%;float:left;padding:15px 0;}*/
+/*ul {
+	margin: auto;
+	width:40%;
+}*/
+
 /*ul li {display: inline-block;list-style: none;margin:0;}*/
 
-.demoFirst {position:relative;width:300px;height:200px;overflow:hidden;float:left;margin:20px;background-color:rgba(253,253,253,1.00);}
-.demoFirst p,.demoFirst h2 {color:#fff;padding:10px;left:-20px;top:20px;position:relative}
-.demoFirst p {font-size:12px;line-height:18px;margin:0}
-.demoFirst h2 {font-size:20px;line-height:24px;margin:0;}
+.demoFirst {
+	/*width:300px;
+	height:200px;*/
+	overflow:hidden;
+}
 
-.effect img {position:absolute;left:0;bottom:0;cursor:pointer;width: 100%;-webkit-transition:bottom .3s ease-in-out;-moz-transition:bottom .3s ease-in-out;-o-transition:bottom .3s ease-in-out;transition:bottom .3s ease-in-out;}
+
+/*
+.effect img {height: 200px;
+	-webkit-transition:bottom .3s ease-in-out;
+	-moz-transition:bottom .3s ease-in-out;
+	-o-transition:bottom .3s ease-in-out;
+	transition:bottom .3s ease-in-out;}
 .effect img.top:hover {bottom:-96px;padding-top:100px;}
 h2.zero,p.zero {margin:0;padding:0}
+*/
 
-/*================================*/
 a > ul > li > h2{
 	display: none;
 }
@@ -25,10 +36,26 @@ ul > li {
 	font-size: 2em;
 }
 .cat{
-	max-width: 23%;
-	display: inline-block;
-	margin: 15px;
+	float: left;
+	margin: 10px;
+	width: 250px;
+	height: 200px;
+	background-color:rgba(253,253,253,1.00);
 }
 .cat:hover{
 	cursor: copy;
+}
+.top {
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: auto;
+}
+.projetos_lista > ul{
+	margin: auto;
+	width:40%;
+}
+.projetos_lista{
+	margin-bottom: 20px;
 }
