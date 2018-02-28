@@ -1,9 +1,12 @@
 // JavaScript Document
+
 /*
 https://www.w3schools.com/jquery/css_offset.asp
 https://stackoverflow.com/questions/19012495/smooth-scroll-to-div-id-jquery/26129950#26129950
 */
 
+var IstoNaoFucnionaaaaa = -150;
+/*
 $(document).ready(function(){
 	"use strict";
 	$("#LinkProjeto").click(function() {
@@ -21,14 +24,11 @@ $(document).ready(function(){
 			scrollTop: $("#admin").offset().top-150
 		}, 1500);
 	});
-	$("#LinkContactos").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#contactos").offset().top-150
-		}, 1500);
-	});
-	$("#Linkre").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#re").offset().top-150
-		}, 1500);
-	});
-});
+});*/
+
+function Slide(id){
+	"use strict";
+	$('html, body').animate({
+		scrollTop: $(id).offset().top+IstoNaoFucnionaaaaa
+	}, 1000);
+}
