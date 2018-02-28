@@ -67,6 +67,7 @@ ul > li {
     transition: all 200ms ease-in;
     transform: scale(1.2);
 	/*https://codepen.io/wifeo/pen/qzwkb*/
+	/*https://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
 }
 .top {
 	height: 200px;
