@@ -66,6 +66,7 @@ ul > li {
     -moz-transform: scale(1.2);
     transition: all 200ms ease-in;
     transform: scale(1.2);
+	/*https://codepen.io/wifeo/pen/qzwkb*/
 }
 .top {
 	height: 200px;
