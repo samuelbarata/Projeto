@@ -32,7 +32,7 @@ a > ul > li > h2{
 a > ul > li > p{
 	display: none;
 }
-ul > li {
+.projetos_lista > ul > li {
 	font-size: 2em;
 }
 .cat{
