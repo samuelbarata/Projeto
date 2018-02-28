@@ -46,9 +46,26 @@ ul > li {
 	padding-bottom: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
 }
 .cat:hover{
 	cursor: copy;
+	z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
 }
 .top {
 	height: 200px;
@@ -63,4 +80,7 @@ ul > li {
 }
 .projetos_lista{
 	margin-bottom: 20px;
+}
+.projetos_lista > h2 {
+	margin-top: 10px;
 }
