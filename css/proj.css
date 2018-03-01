@@ -73,13 +73,26 @@ a > ul > li > p{
 	/*https://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
 }
 .top {
-height: 200px;
-margin-left: auto;
-margin-right: auto;
-display: block;
-width: auto;
-margin-top: -10px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: auto;
+	margin-top: 0px;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.top {
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: auto;
+		margin-top: -10px;
+	}
+}
+
+
 .projetos_lista > ul{
 	margin: auto;
 	width:40%;
