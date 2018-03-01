@@ -91,3 +91,9 @@ a > ul > li > p{
 .projetos_lista > h2 {
 	margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+	.projetos_lista > ul{
+		width:80%;
+	}
+}
