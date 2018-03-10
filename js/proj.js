@@ -7,6 +7,7 @@ var lazer = document.getElementById("lazer");
 var outros = document.getElementById("outras_dinamicas");*/
 var menu = -70;
 var id;
+var element;
 
 function hide_all() {
 	"use strict";
@@ -18,45 +19,49 @@ function hide_all() {
 function cult() {
 	"use strict";
 	id = "#cultura";
+	element = document.getElementById("cultura");
 	hide_all();
 	$("#cultura").css("display", "block");
-	if (screen.height < 750){scrollll(id);}
+	scrollToBottom();
 }
 function deps() {
 	"use strict";
 	id = "#desporto";
+	element = document.getElementById("desporto");
 	hide_all();
 	$("#desporto").css("display", "block");
-	if (screen.height < 750){scrollll(id);}
+	scrollToBottom();
 }
 function laz() {
 	"use strict";
 	id = "#lazer";
+	element = document.getElementById("lazer");
 	hide_all();
 	$("#lazer").css("display", "block");
-	if (screen.height < 750){scrollll(id);}
+	scrollToBottom();
 }
 function outdin() {
 	"use strict";
 	id = "#outras_dinamicas";
+	element = document.getElementById("outras_dinamicas");
 	hide_all();
 	$("#outras_dinamicas").css("display", "block");
-	if (screen.height < 750){scrollll(id);}
+	scrollToBottom();
 }
 
 $(document).ready(function(){"use strict"; hide_all();});
 
-function scrollll(id){
+
+/*function scrollll(id){
 	"use strict";
 	$('html, body').animate({
 		scrollTop: $(id).offset().top+menu
 	}, 1000);
-}
-
+}*/
 
 
 
 function scrollToBottom() {
 	"use strict";
-    $(id).scrollIntoView(false); // Bottom
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); // ! NÃO FUNCIONA PRA WEBKIT ! //
 }
