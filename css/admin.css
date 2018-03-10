@@ -98,7 +98,8 @@ footer a {
 }
 footer .note a { width: auto; float: none; }
 /* images */
-img { 
+.img > img,
+section > a > img{ 
   max-width: 100%; 
 }
 .shadow { 

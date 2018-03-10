@@ -30,10 +30,17 @@ a > ul > li > p{
 .projetos_lista > ul > li {
 	font-size: 2em;
 }
-.cat{
+/*.cat{
 	float: left;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+	transform: scale(1);
 	margin-top: 15px;
-	margin-right: 10px;
 	margin-left: 10px;
 	margin-bottom: 15px;
 	width: 255px;
@@ -44,6 +51,23 @@ a > ul > li > p{
 	padding-bottom: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+*/
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.top {
+		margin-top: -10px;
+	}
+}*/
+
+.cat{
+	float: left;
+	background-color: rgba(66,132,78,0.05);
+	max-width: calc(1300 / 4);
+	width: 21%;
+	margin: 2.0%;
+	border-radius: 45px;
+	
 	-webkit-transition: all 200ms ease-in;
 	-webkit-transform: scale(1);
 	-ms-transition: all 200ms ease-in;
@@ -53,9 +77,34 @@ a > ul > li > p{
 	transition: all 200ms ease-in;
 	transform: scale(1);
 }
+
+.top {
+	position: relative;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	display:inherit;
+	max-width: 100%;
+	width: 90%;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.top {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.cat{
+		float: left;
+		background-color: rgba(66,132,78,0.05);
+		max-width: calc(1300 / 4);
+		width: 45%;
+
+	}
+}
 .cat:hover{
 	cursor: copy;
-	z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
     -ms-transition: all 200ms ease-in;
@@ -67,20 +116,9 @@ a > ul > li > p{
 	/*https://codepen.io/wifeo/pen/qzwkb*/
 	/*https://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
 }
-.top {
-	height: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: auto;
-	margin-top: 0px;
-}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
-	.top {
-		margin-top: -10px;
-	}
-}
+
+
 .projetos_lista > ul{
 	margin: auto;
 	width:40%;
@@ -92,7 +130,7 @@ a > ul > li > p{
 	margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
 	.projetos_lista > ul{
 		width:80%;
 	}

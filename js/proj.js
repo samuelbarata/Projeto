@@ -6,7 +6,7 @@ var desporto = document.getElementById("desporto");
 var lazer = document.getElementById("lazer");
 var outros = document.getElementById("outras_dinamicas");*/
 var menu = -70;
-var id
+var id;
 
 function hide_all() {
 	"use strict";
@@ -51,4 +51,12 @@ function scrollll(id){
 	$('html, body').animate({
 		scrollTop: $(id).offset().top+menu
 	}, 1000);
+}
+
+
+
+
+function scrollToBottom() {
+	"use strict";
+    $(id).scrollIntoView(false); // Bottom
 }
