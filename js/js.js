@@ -40,3 +40,9 @@ function Slide(id){
 		scrollTop: $(id).offset().top+menuuu
 	}, timeeer);
 }
+
+/*
+function Slide(id){
+	"use strict";
+	$(id).scrollIntoView();
+}*/

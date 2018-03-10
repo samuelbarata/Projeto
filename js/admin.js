@@ -6,6 +6,16 @@
 	license: https://www.opensource.org/licenses/mit-license.php
    * modified for the purpose of having an overlay in a smaller window.
  */
+function finnaly(){
+	"use strict";
+	$("#cboxTitle").css("display", "none");
+	$("#cboxCurrent").css("display", "none");
+	$("#cboxNext").css("display", "none");
+	$("#cboxPrevious").css("display", "none");
+	$("#cboxClose").css("display", "none");
+	console.log("HIDE!!!");
+}
+
 
 (function ($, document, window) {
 	"use strict";
@@ -331,7 +341,7 @@ window.CP.exitedLoop(1);
 				interfaceWidth = $leftBorder.width() + $rightBorder.width() + $content.outerWidth(true) - $content.width();
 				loadedHeight = $loaded.outerHeight(true);
 				loadedWidth = $loaded.outerWidth(true);
-
+				
 				if (settings.returnFocus) {
 					$(element).blur();
 					$events.one(event_closed, function () {
@@ -344,6 +354,8 @@ window.CP.exitedLoop(1);
 					cursor: settings.overlayClose ? "pointer" : "auto",
 					visibility: 'visible'
 				}).show();
+				
+
 				
 				// Opens inital empty ColorBox prior to content being loaded.
 				settings.w = setSize(settings.initialWidth, 'x');
@@ -363,6 +375,7 @@ window.CP.exitedLoop(1);
 				$groupControls.add($title).hide();
 				
 				$close.html(settings.close).show();
+
 			}
 			
 			publicMethod.load(true);
@@ -406,6 +419,7 @@ window.CP.exitedLoop(1);
 					$tag(div, "BottomRight")
 				)
 			).find('div div').css({'float': 'left'});
+			
 			
 			$loadingBay = $tag(div, false, 'position:absolute; width:9999px; visibility:hidden; display:none');
 			
@@ -695,6 +709,12 @@ window.CP.exitedLoop(1);
 				clearTimeout(loadingTimer);
 				$loadingOverlay.remove();
 				trigger(event_complete, settings.onComplete);
+		//FIND ME!!!		
+				if(screen.width < 750){
+					
+					finnaly();
+					
+				}
 			};
 			
 			if (isIE) {
@@ -1006,8 +1026,16 @@ $(".group-cbox1").colorbox({rel:'group-cbox1', transition:"none", width:"736px",
 $(".inline").colorbox({inline:true, width:"736px"});
 
 });
-
-
-
  
 //# sourceURL=pen.js
+
+/*=================================*/
+/*$(document).ready(function(){
+	"use strict";
+	$("#cboxTitle").css("display", "none");
+	$("#cboxCurrent").css("display", "none");
+	$("#cboxNext").css("display", "none");
+	$("#cboxPrevious").css("display", "none");
+	$("#cboxClose").css("display", "none");
+});*/
+

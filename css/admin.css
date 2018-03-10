@@ -323,7 +323,6 @@ The following CSS is consistent between example themes and should not be altered
    #colorbox[style] {
       top: 150px !important;
     }
-
   }
 
 
@@ -369,7 +368,8 @@ The following CSS is consistent between example themes and should not be altered
     #cboxTitle {
       margin-top: 73%;
       margin-left: 2.5%;
-      text-align: left; 
+      text-align: left;
+	  display:none;
     }
 
     #cboxClose { 
@@ -382,7 +382,6 @@ The following CSS is consistent between example themes and should not be altered
    #colorbox[style] {
       top: 154px !important;
     }
-
   }
 
   @media only screen and (min-width: 720px) { 
@@ -421,7 +420,6 @@ top: 154px !important;
     #colorbox {
       /* margin-top: -33px; */
     }
-
   }
 /*=================================================*/
 /*#colorbox{
