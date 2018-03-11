@@ -6,6 +6,9 @@
 	license: https://www.opensource.org/licenses/mit-license.php
    * modified for the purpose of having an overlay in a smaller window.
  */
+
+console.log("Screen Width: " + screen.width + " Screen Height: " + screen.height);
+
 function finnaly(){
 	"use strict";
 	$("#cboxTitle").css("display", "none");
@@ -13,7 +16,7 @@ function finnaly(){
 	$("#cboxNext").css("display", "none");
 	$("#cboxPrevious").css("display", "none");
 	$("#cboxClose").css("display", "none");
-	console.log("HIDE!!!");
+	console.log("hide_Screen Width: " + screen.width + " Screen Height: " + screen.height);
 }
 
 
@@ -710,10 +713,8 @@ window.CP.exitedLoop(1);
 				$loadingOverlay.remove();
 				trigger(event_complete, settings.onComplete);
 		//FIND ME!!!		
-				if(screen.width < 750){
-					
+				if(screen.width < 720){
 					finnaly();
-					
 				}
 			};
 			

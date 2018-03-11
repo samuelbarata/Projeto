@@ -8,6 +8,7 @@ footer {
     font-weight: lighter;
     color: white;
 	padding-bottom: 10px;
+	margin: 0;
 }
 .footerHeader{
     width:100%;
@@ -40,11 +41,12 @@ footer iframe {
 .sm li {
     display: inline;
     padding:5px;
-    float:left;
+    float: left;
 } 
 .sm li a img {
-    width:64px;
+    width:42px;
 	cursor: copy;
+	margin: 0;
 }
 footer a{
 	color:white;

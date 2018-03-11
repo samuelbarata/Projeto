@@ -63,5 +63,10 @@ $(document).ready(function(){"use strict"; hide_all();});
 
 function scrollToBottom() {
 	"use strict";
-    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); // ! NÃO FUNCIONA PRA WEBKIT ! //
+	if(navigator.userAgent.match(/AppleWebKit/i)){
+		//n funciona no Safari/Chrome
+	}
+	else{
+    	element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+	}
 }
