@@ -1,3 +1,15 @@
+if (screen.height < 750){
+	var menuuu = -70;
+	var timeeer = 500;
+}
+else{
+	var menuuu = -150;
+	var timeeer = 1000;
+}
+
+
+
+
 /*! @preserve sweet-scroll v3.0.0 - tsuyoshiwada | MIT License */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -120,6 +132,7 @@ var getScroll = function ($el, direction) { return ($el[directionMethodMap[direc
 var setScroll = function ($el, offset, direction) {
     $el[directionMethodMap[direction]] = offset;
 };
+					  //FIND ME
 var getOffset = function ($el, $context) {
     var rect = $el.getBoundingClientRect();
     if (rect.width || rect.height) {
@@ -283,17 +296,17 @@ var parseCoordinate = function (coordinate, enableVertical) {
     }
     return res;
 };
-
+//FIND ME
 var defaultOptions = {
     trigger: '[data-scroll]',
     header: '[data-scroll-header]',
     duration: 1000,
     easing: 'easeOutQuint',
-    offset: 0,
+    offset: 0, //0
     vertical: true,
     horizontal: false,
     cancellable: true,
-    updateURL: false,
+    updateURL: true,
     preventDefault: true,
     stopPropagation: true,
     quickMode: false,
@@ -304,6 +317,7 @@ var defaultOptions = {
     complete: null,
     step: null,
 };
+console.log(defaultOptions);
 
 var CONTAINER_CLICK_EVENT = 'click';
 var CONTAINER_STOP_EVENT = 'wheel touchstart touchmove';
@@ -458,13 +472,13 @@ var SweetScroll = /** @class */ (function () {
             return;
         }
         // Get scroll offset
-        var offset = parseCoordinate(optOffset, vertical);
+        var offset = parseCoordinate(optOffset, vertical); //FIND ME
         var coordinate = parseCoordinate(distance, vertical);
         var scroll = { top: 0, left: 0 };
         if (coordinate) {
             if (coordinate.relative) {
                 var current = getScroll($el, vertical ? 'y' : 'x');
-                scroll.top = vertical ? current + coordinate.top : coordinate.top;
+                scroll.top = vertical ? current + coordinate.top: coordinate.top;
                 scroll.left = !vertical ? current + coordinate.left : coordinate.left;
             }
             else {

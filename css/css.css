@@ -38,7 +38,6 @@ article{
     top:0;
     height:100%;
     width:100%;
-	
     position:absolute;
 }
 article > div > h1{
@@ -46,10 +45,16 @@ article > div > h1{
 	color: rgba(66,132,78,1.00);
 	margin-bottom: 5px;
 	font-weight: bold;
+	padding-top: 150px;
 }
 #proj > div > h2 {
 	color: rgba(66,132,78,1.00);
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 25px;
+}
+@media screen and (max-width: 750px) {
+	.article > div > h1{
+		padding-top: 70px;
+	}
 }

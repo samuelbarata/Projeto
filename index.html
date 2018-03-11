@@ -94,17 +94,17 @@ Samuel Barata 2018
 	<!---->
 	
 <!---->	
-	
-	<div id="nav" class="navbar-fixed-top"><!--https://bootsnipp.com/snippets/featured/flipkart-like-navbar-->
+	<header_01 data-scroll-header>
+	<div id="nav" class="navbar-fixed-top" ><!--https://bootsnipp.com/snippets/featured/flipkart-like-navbar-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<div id="flipkart-navbar">
 			<div class="container">
 				<div class="row row1">
 					<ul class="largenav pull-right">
-						<li class="upper-links"><a class="links" id="LinkProjeto" onClick="Slide('#proj')">Projeto</a></li>
-						<li class="upper-links"><a class="links" id="LinkCampanha" onClick="Slide('#campanha')">Campanha</a></li>
-						<li class="upper-links"><a class="links" id="LinkAdmin" onClick="Slide('#admin')">Quem Somos</a></li>
-						<li class="upper-links"><a class="links" onClick="Slide('#end_of_page')">Contactos</a></li>
+						<li class="upper-links"><a class="links" onClick="Slide('#proj')" href="#proj" data-scroll>Projeto</a></li>
+						<li class="upper-links"><a class="links" onClick="Slide('#campanha')" href="#campanha" data-scroll>Campanha</a></li>
+						<li class="upper-links"><a class="links" onClick="Slide('#admin')" href="#admin" data-scroll>Quem Somos</a></li>
+						<li class="upper-links"><a class="links" onClick="Slide('#end_of_page')" href="#end_of_page" data-scroll>Contactos</a></li>
 						<!--<li class="upper-links"><a class="links" id="LinkContactos">Contactos</a></li>
 						<!--<li class="upper-links">
 							<a class="links" href="http://clashhacks.in/">
@@ -169,11 +169,25 @@ Samuel Barata 2018
 			<a href="#end_of_page" onclick="closeNav()">Contactos</a>
 		</div>
 	</div>
-	<div id="space_for_nav"></div>
+	<!--<div id="space_for_nav"></div>-->
+	</header_01>
 <!---->
 
-<article>
+<article id="wrapper">
 
+	
+	<script>
+    var scroller = new SweetScroll({
+      vertical: true,
+      horizontal: false,
+    }, '#wrapper');
+
+    // Toggle quickMode
+    document.querySelector('#quick-mode').addEventListener('change', function(e) {
+      scroller.update({ quickMode: this.checked });
+    }, false);
+  </script>
+	
 <!---->
 	
 	

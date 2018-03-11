@@ -33,7 +33,7 @@ $(document).ready(function(){
 		}, 1500);
 	});
 });*/
-
+/*
 function Slide(id){
 	"use strict";
 	$('html, body').animate({
