@@ -47,7 +47,7 @@ article > div > h1{
 	font-weight: bold;
 	padding-top: 150px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
 	article > div > h1{
 		padding-top: 70px;
 	}

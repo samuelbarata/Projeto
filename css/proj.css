@@ -93,6 +93,11 @@ a > ul > li > p{
 		margin-top: 0;
 	}
 }
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
+	.top {
+		margin-top: 0;
+	}
+}
 
 @media screen and (max-width: 580px) {
 	.cat{
@@ -116,8 +121,9 @@ a > ul > li > p{
 	/*https://codepen.io/wifeo/pen/qzwkb*/
 	/*https://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
 }
-
-
+.cat > a {
+	text-decoration: none;
+}
 
 .projetos_lista > ul{
 	margin: auto;
@@ -134,4 +140,12 @@ a > ul > li > p{
 	.projetos_lista > ul{
 		width:80%;
 	}
+}
+
+.zero {
+	text-align: center;
+	color: black;
+	margin-right: 2%;
+	margin-left: 2%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
