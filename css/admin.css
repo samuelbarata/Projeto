@@ -103,7 +103,9 @@ section > a > img{
   max-width: 100%; 
 }
 .shadow { 
-  display: block; 
+  display: block;
+	height: 128px;
+	width: 128px;
 }
 .image-wrap  {
   position: relative;
