@@ -317,7 +317,7 @@ var defaultOptions = {
     complete: null,
     step: null,
 };
-console.log(defaultOptions);
+//console.log(defaultOptions);
 
 var CONTAINER_CLICK_EVENT = 'click';
 var CONTAINER_STOP_EVENT = 'wheel touchstart touchmove';
