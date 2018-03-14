@@ -1043,9 +1043,9 @@ $(".inline").colorbox({inline:true, width:"736px"});
 	$("#cboxClose").css("display", "none");
 });*/
 function margin_qs(){"use strict";
-	//125x125
+	//img = 125x125 + 10px margem
 	var comprimento = document.getElementById("image-wrap").offsetWidth;
-	var conta1, conta2, conta3, conta4,margem;
+	var conta1, conta2, conta3, conta4, margem;
 	
 	margem = 10;//margem mínima
 	
