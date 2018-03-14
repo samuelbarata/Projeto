@@ -117,12 +117,22 @@ section > a > img{
   overflow: hidden;	
 }
 
+.group-cbox1{
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+
 .image-wrap > a {
   float: left; 
-  margin: 1em 0 0 1em;
-  margin: 1rem 0 0 1rem;
+  /*margin: 1em 0 0 1em;
+ /* margin: 1rem 0 0 1rem;/*FIND ME*/
   outline: 1px solid #333;
 }
+
+
 
 /* layout */ 
 .media { 

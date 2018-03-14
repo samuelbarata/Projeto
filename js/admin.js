@@ -7,7 +7,6 @@
    * modified for the purpose of having an overlay in a smaller window.
  */
 
-console.log("Screen Width: " + screen.width + " Screen Height: " + screen.height);
 
 function finnaly(){
 	"use strict";
@@ -16,7 +15,6 @@ function finnaly(){
 	$("#cboxNext").css("display", "none");
 	$("#cboxPrevious").css("display", "none");
 	$("#cboxClose").css("display", "none");
-	console.log("hide_Screen Width: " + screen.width + " Screen Height: " + screen.height);
 }
 
 
@@ -713,9 +711,14 @@ window.CP.exitedLoop(1);
 				$loadingOverlay.remove();
 				trigger(event_complete, settings.onComplete);
 		//FIND ME!!!		
-				if(screen.width < 720){
+				if(window.innerWidth < 720){
 					finnaly();
 				}
+				$(window).resize(function() {
+					if(window.innerWidth < 720){
+						finnaly();
+					}
+				});
 			};
 			
 			if (isIE) {
@@ -1039,4 +1042,41 @@ $(".inline").colorbox({inline:true, width:"736px"});
 	$("#cboxPrevious").css("display", "none");
 	$("#cboxClose").css("display", "none");
 });*/
+function margin_qs(){"use strict";
+	//125x125
+	var comprimento = document.getElementById("image-wrap").offsetWidth;
+	var conta1, conta2, conta3, conta4,margem;
+	
+	margem = 10;//margem mínima
+	
+	conta1 = (comprimento - 24)/(125 + 10); //quantidade que pessoas por linha exato
+	conta2 = Math.floor(conta1);//PESSOAS POR LINHA
+	conta3 = comprimento - (conta2 * 125);//Diferença
+	conta4 = conta3 / conta2;//distribuição da margem 
+	margem = 10 + conta4;//margem por pessoa
+	
 
+
+	$(".group-cbox1").css("margin-left", margem);
+	
+	console.clear();
+	console.info("Samuel Barata 2018");
+	console.info("Screen Width: " + screen.width + "px Screen Height: " + screen.height + "px");
+	console.info("Window Width: " + window.innerWidth + "px Window Height: " + window.innerHeight + "px");
+	console.log("Comprimento: " + comprimento + "px");
+	console.log("Pessoa: " + conta1 + "px");
+	console.log("Nº Pessoas: " + conta2);
+	console.log("Margem total: " + conta3 + "px");
+	console.log("Margem a Acrescentar " + conta4 + "px");
+	console.log("Margem: " + margem + "px");
+}
+
+$(document).ready(function(){
+	"use strict";
+	margin_qs();
+});
+
+$(window).resize(function() {
+	"use strict";
+	margin_qs();
+});
