@@ -16,6 +16,14 @@ function finnaly(){
 	$("#cboxPrevious").css("display", "none");
 	$("#cboxClose").css("display", "none");
 }
+function showna(){
+	"use strict";
+	$("#cboxTitle").css("display", "block");
+	$("#cboxCurrent").css("display", "block");
+	$("#cboxNext").css("display", "block");
+	$("#cboxPrevious").css("display", "block");
+	$("#cboxClose").css("display", "block");
+}
 
 
 (function ($, document, window) {
@@ -717,6 +725,9 @@ window.CP.exitedLoop(1);
 				$(window).resize(function() {
 					if(window.innerWidth < 720){
 						finnaly();
+					}
+					else{
+						showna();
 					}
 				});
 			};
