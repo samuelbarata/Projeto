@@ -59,3 +59,7 @@ article > div > h1{
 	text-transform: uppercase;
 	font-size: 25px;
 }
+@font-face{
+    font-family: "Samuel";
+    src: url('../fonts/Samuel.ttf');
+}

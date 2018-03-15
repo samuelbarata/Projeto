@@ -55,3 +55,21 @@ footer a{
 footer a:hover {
 
 }
+#web_di{
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	display:block;
+	float: none;
+	width: 100%;
+}
+#web_di:hover{
+	color: orange;
+}
+#assinatura{
+	font-family: Samuel, Consolas;
+	font-size: 2em;
+	vertical-align: middle;
+	font-stretch: expanded;
+	font-weight:200;
+}
