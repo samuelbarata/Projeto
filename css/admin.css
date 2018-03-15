@@ -14,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font: 100%/1.375 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", AvenirNext-Regular, Corbel, "Segoe Ui", "Trebuchet MS", "DejaVu Sans", Verdana, sans-serif; 
   width: auto;
-  padding-bottom: 1em;
+  /*padding-bottom: 1em;*/
   color: #333;
   background-color: #fff;
 } 
