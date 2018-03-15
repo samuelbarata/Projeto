@@ -1049,13 +1049,12 @@ function margin_qs(){"use strict";
 	
 	margem = 10;//margem mínima
 	
-	conta1 = (comprimento - 24)/(125 + 10); //quantidade que pessoas por linha exato
+	conta1 = (comprimento /*- 24*/)/(125 + 10); //quantidade que pessoas por linha exato
 	conta2 = Math.floor(conta1);//PESSOAS POR LINHA
-	conta3 = comprimento - (conta2 * 125);//Diferença
+	conta3 = comprimento - (conta2 * 135);//Diferença
 	conta4 = conta3 / conta2;//distribuição da margem 
-	margem = 10 + conta4;//margem por pessoa
+	margem = /*10 + */conta4;//margem por pessoa
 	
-
 
 	$(".group-cbox1").css("margin-left", margem);
 	
@@ -1067,8 +1066,8 @@ function margin_qs(){"use strict";
 	console.log("Pessoa: " + conta1 + "px");
 	console.log("Nº Pessoas: " + conta2);
 	console.log("Margem total: " + conta3 + "px");
-	console.log("Margem a Acrescentar " + conta4 + "px");
-	console.log("Margem: " + margem + "px");
+	console.log("Margem a Acrescentar/pessoa: " + conta4 + "px");
+	console.log("Margem/pessoa: " + margem + "px");
 }
 
 $(document).ready(function(){
