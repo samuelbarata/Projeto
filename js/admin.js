@@ -1047,14 +1047,13 @@ function margin_qs(){"use strict";
 	var comprimento = document.getElementById("image-wrap").offsetWidth;
 	var conta1, conta2, conta3, conta4, margem;
 	
-	margem = 10;//margem mínima
+	//margem = 10;//margem mínima
 	
-	conta1 = (comprimento /*- 24*/)/(125 + 10); //quantidade que pessoas por linha exato
+	conta1 = (comprimento /*- 24*/)/(128 + 10); //quantidade que pessoas por linha exato
 	conta2 = Math.floor(conta1);//PESSOAS POR LINHA
-	conta3 = comprimento - (conta2 * 135);//Diferença
-	conta4 = conta3 / conta2;//distribuição da margem 
-	margem = /*10 + */conta4;//margem por pessoa
-	
+	conta3 = comprimento - (conta2 * 138);//Diferença
+	conta4 = (conta3) / (conta2);//distribuição da margem 
+	margem = 10 + conta4;//margem por pessoa
 
 	$(".group-cbox1").css("margin-left", margem);
 	
